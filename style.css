@@ -1,0 +1,336 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background-color: #00246c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    
+    font-size: 2.5em;
+}
+
+p {
+    
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    padding: 20px 0;
+    font-size: 2.2em;
+   
+}
+h3 {
+    font-size: 1.2em;
+    padding: 20px 0;
+    font-weight:bold;
+ }
+ 
+ a:link {
+     color: #bfefff;
+     text-decoration:none;
+ }
+  
+ a:visited {
+     color: #bfefff;
+ }
+ 
+ a:hover {
+     color: #4372ff;
+ }
+ .container {
+    width: auto;
+    margin: 0 auto;     /*Center*/
+    overflow: hidden;
+    
+}
+ #head{
+   margin-bottom: 30px;
+   overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    text-align: left;
+    background: url(assets/79731568097599.5b50bca477735.jpg)no-repeat center top fixed;
+    background-size:contain;
+    
+    
+ }
+ #head h1, h5{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.8);
+    margin-left: 40px;
+    color: #020301;
+    padding:1%;
+    border-radius: 20px;
+    
+ }
+ #welcome {
+  height: auto;
+  
+ }
+ #welcome h1{
+  margin-top: 10px;
+  text-align: center;
+ }
+
+ .box-container {
+  
+  grid-template-columns: auto auto; /* Adjust the column widths as needed */
+  justify-content:flex-start;
+  align-items: flex-start; /* Aligns items to the left */
+  
+  }
+  
+  
+  .grid-box {
+
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 10px;
+    background-color: rgba(0, 7, 59, 0.9);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+    
+  }
+  
+  .left {
+    /* Adjust the background color as desired */
+    text-align: center;
+    
+  }
+ #why h2, #hello_code h2 , #Conclusion h2, #Var h2{
+  padding:20px;
+  border-radius: 10px;
+  background-color: #4372ff;
+
+ }
+ 
+ 
+ #why .pro, #hello_code .pro , #Conclusion .pro, .pro{
+  padding:20px;
+  border-radius: 10px;
+  background-color: #001031;
+ }
+ #footer {
+  background-color: #475fff;
+  font-size: 1.1em;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  
+}
+ #footer a:hover{
+  filter: brightness(20%);
+ }
+ #hello_c {
+  background-color: #272727;
+  color: white;
+  font-size: large;
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  border-radius: 10px;
+ }
+
+#footer img{
+  background-color: rgba(255, 255, 255, 0.2);
+ padding:10px; 
+ border-radius: 20px;
+ max-height: 50px;
+
+ 
+}
+#start {
+  height: auto;
+  
+}
+.link-list {
+  padding: 0;
+  list-style: none; /* Remove the default bullet point */
+  text-align: center;
+  background-color: #00246c;
+  border-radius: 10px;
+  
+  
+}
+
+.link-list li {
+  font-size: 18px; /* Adjust the font size as desired */
+  border-bottom: solid black 2px;
+}
+
+.link-list li a {
+  
+  text-decoration: none; /* Remove underline from the links */
+}
+
+#start h2{
+  padding:20px;
+  border-radius: 10px;
+  background-color: #4372ff;
+
+ }
+ #start .pro{
+  line-height: 50px;
+  padding:20px;
+  border-radius: 10px;
+  background-color: #001031;
+ }
+ 
+ 
+  #start a:hover{
+    
+    color: lightblue;
+    filter: brightness(80%);
+  }
+  
+  @keyframes hop {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the distance the text hops up */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .hop {
+    animation: hop 2.2s infinite; /* Adjust the animation duration as needed */
+  }
+  .shadowed-text {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* Adjust the shadow properties as needed */
+  }
+  #helloworld p, #Conclusion p{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+ #Var table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+#Var th, #Var td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  #Var .pro, #input_user .pro{
+    margin-top: 20px;
+  }
+ #Var code, #input_user code{
+    height: max-content;
+    
+  }
+  #Var ul .string_list_ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+/* Style the list items */
+#Var li .string_list_li{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+#Var table .std_table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style the table header */
+#Var th .std_th{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the table data (cells) */
+#Var td .std_td{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+#Var h3{
+  background-color: #021a85;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.button {
+  border-radius: 4px;
+  background-color: #000a30;
+  border: solid rgb(46, 89, 245);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover{
+  border-color: #4372ff;
+}
+.button:hover span {
+  padding-right: 25px;
+  
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#input_user .pro h2{
+  background-color: #4372ff;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+#input_user .pro p{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+
+}
+#input_user code {
+  font-size: 1.2em;
+  width: 100%;
+  
+}
+.container_code {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding:20px;
+  border-radius: 10px;
+}
+  

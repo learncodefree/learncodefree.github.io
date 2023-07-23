@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<!--Site Declerations-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aiden Allen">
+    <title>Learn To Code &vert; Variables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="responsive.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+</head>
+
+<body>
+<div class="container">
+    <section id="head">
+        <a href="index.html">
+            
+            <h1>
+                Learn To Code!
+            </h1>
+        </a>
+        <br>
+        <h5>
+            For Best View Please Use a PC
+        </h5>
+    </section>
+    <section id="intro_var">
+        <div class="box-container">
+                <div class="grid-box left">
+                    <h2 class="hop shadowed-text">
+                        Variables
+                    </h2>
+                    <p>
+                        Variables are one of the most important concepts within programming. Variables allow for the programmer to gather user input, modify data, and even 
+                        store data! In this lesson you will learn to create a few types of variables as well as how to use them!
+                    </p>
+                </div>
+        </div>
+    </section>
+    <section id="Var">
+        <div class="pro">
+        <h2>Variables</h2>
+        <p>Before we declare a variable we should be aware of the type that it will be. The types are as follows:</p>
+        <table>
+            <tr>
+              <th>Primitive Types</th>
+              <th>Derived Types</th>
+              <th>User-defined Types</th>
+            </tr>
+            <tr>
+              <td>bool</td>
+              <td>array</td>
+              <td>class</td>
+            </tr>
+            <tr>
+              <td>Represents boolean values: true or false</td>
+              <td>A collection of elements of the same type</td>
+              <td>A user-defined data type</td>
+            </tr>
+            <tr>
+              <td>char</td>
+              <td>pointer</td>
+              <td>structure</td>
+            </tr>
+            <tr>
+              <td>A single character</td>
+              <td>A variable that stores the memory address of another variable</td>
+              <td>A collection of different data types grouped together</td>
+            </tr>
+            <tr>
+              <td>int</td>
+              <td>reference</td>
+              <td>union</td>
+            </tr>
+            <tr>
+              <td>An integer (whole number)</td>
+              <td>An alias or alternative name for an existing variable</td>
+              <td>A user-defined data type that can hold different data types but only one at a time</td>
+            </tr>
+            <tr>
+              <td>float</td>
+              <td>function</td>
+              <td>enum</td>
+            </tr>
+            <tr>
+              <td>A single-precision floating-point number</td>
+              <td>A block of code that performs a specific task</td>
+              <td>An enumeration that defines a set of named constants</td>
+            </tr>
+            <tr>
+              <td>double</td>
+              <td>void</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>A double-precision floating-point number</td>
+              <td>Represents the absence of a type</td>
+              <td></td>
+            </tr>
+          </table>
+          <p>
+            <br>
+            In todays lesson we will only be covering int, float, char, bool, and strings.
+          </p>
+          <h2>Integers</h2>
+          <p>Intregers are simply whole numbers! Intreger examples being 1, 10, 4, etc. Intregers within c++
+            are also unsigned, meaning they may be positive or negative. The unsigned keyword may negate this allowing
+        for only positive numbers to be held within an intreger variable. Lets look at an example of the decleration of 
+    an intreger.</p>
+    <br>
+    <code>
+        #include <iostream><br>
+            using namespace std;<br>
+            int main(){<br>
+                &#160;&#160;&#160;&#160;int variableName;<br>
+                &#160;&#160;&#160;&#160;int variableNameTwo = 1;<br>
+                &#160;&#160;&#160;&#160;cout << variableName << endl;<br>
+            }<br><br>
+    </code>
+    
+      <div>
+        <h2>Characters</h2>
+        <p>
+          Characters, also known as <code>char</code>, allows us to store single characters. In a later lesson
+          you will learn to combine these characters in order to form a c-string! The char data type can store any 
+          single character ('A', 'b', '1', '%', etc). <br><br>
+          <code>char myChar; <br>myChar = 'A'; <br> char anotherChar = 'B'; </code><br><br>
+
+          <u>Character literals may also be represented using their ASCII values</u>
+          <br><br><code>char myChar = 65;     // Assigning the ASCII value 65, which corresponds to 'A' </code> <br><br>
+        </p>
+      </div>
+      <div>
+        <h2>Strings</h2>
+        <p>
+          Finally! The one everyone has been waiting for! The String... The C++ string (std::string) is a powerful, simple method of 
+          string manipulation. C++ strings contain convenient member functions (covered in `classes` lesson) that allow for enhanced String
+          manipulation. <br><br>
+          <code>
+            #include &lt;string&gt; <br>                         // The pre-processor statement is needed <br>
+            string variableName = "Your First String";<br>
+            cout << variableName << endl; <br>                  // output string to console<br>
+          </code>
+          <br><br>
+          <h3>Member Functions</h3>
+          <table class="std_table">
+            <tr>
+                <th class="std_th">Method</th>
+                <th class="std_th">Description</th>
+            </tr>
+            <tr>
+                <td class="std_td">length() or size()</td>
+                <td class="std_td">Returns the length of the string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">append()</td>
+                <td class="std_td">Appends another string to the end of the current string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">substr()</td>
+                <td class="std_td">Extracts a substring from the current string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">find()</td>
+                <td class="std_td">Searches for a substring within the current string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">erase()</td>
+                <td class="std_td">Removes characters from the string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">replace()</td>
+                <td class="std_td">Replaces a portion of the string with another string.</td>
+            </tr>
+            <tr>
+                <td class="std_td">Some other item</td>
+                <td class="std_td">Description of another item</td>
+            </tr>
+            <tr>
+                <td class="std_td">Another item</td>
+                <td class="std_td">Description of yet another item</td>
+            </tr>
+        </table>
+        </p>
+      </div>
+      <div>
+        <h2>Boolean</h2>
+        <p>In C++, a boolean represents true or false. Booleans are mainly used for controlling the 
+          flow of programs through conditional statements (covered in future lesson). A boolean will always
+          represent False : {0} or True : {1}. The keyword <code>true</code> or <code>false</code> may be used for assignment.
+          <br><br>
+          <code>
+            bool isSunny = true;<br>
+            isSunny = 0;<br>
+          </code>
+          <br>
+          The above statement demonstrates how booleans may be implemented within a program. Booleans may be combined in order to acomplish a more complex function!
+          While it is not conventionally how booleans are used we can use boolean arithmetic to create gates! Below is an example of an 
+          or gate created with boolean arithmetic. 
+          <br><br>
+          <code>
+            bool isSunny = false; <br>
+            bool isCloudy = false;<br>
+            bool shouldIGoOutside = isSunny + isCloudy;<br>
+          </code>
+          <br>
+        </p>
+      </div>
+      <div>
+        <h2>Floats</h2>
+        <p>
+          Floating-point numbers are used to store real numbers, they may allow fractional parts. Floats 
+          are built into c++, allowing for the storage of decimal numbers. They store 32 bits of memory (4 bytes)
+          providing around 7 digits of precision. Beware that floats may provide inexact data due to their precision 
+          being limited. This is due to the trade off in memory and precision. A computer has limited storage capacity, so it
+          must approximate based on the given bits. numbers such a 3.14 will appear as 3.1400000003232 (not a real example) because 
+          the number is approximated. For this reason it may be better to utalize doubles for more precise calculation.
+          <br><br>
+          <code>
+            float myFloat;          <br> 
+            myFloat = 3.14;          <br>
+  
+            float anotherFloat = 2.71828;  <br>
+  
+          </code>
+        </p>
+        
+      </div>
+      <div>
+        <h2>Example Programs</h2>
+        <a href="file_downloads/weather.cpp" download>
+          <button class="button"><span>🌡️ </span</button>
+        </a>
+        <a href="file_downloads/book.cpp" download>
+          <button class="button"><span>📖 </span</button>
+        </a>
+        
+        
+
+      </div>
+
+
+      
+
+    </div>
+        
+    </section>
+
+        
+    
+    
+    <section id="footer">
+        
+        <footer>
+            <p>
+                &copy; Aiden Allen 2023 &vert; Florida State University &vert; Department of Computer Science
+                </p>
+                <p>
+                    <a href="https://github.com/awa03" target="_blank">
+                        <img src="assets/github.png" alt="Github">
+                      </a>
+                      <a href="https://medium.com/@4376340" target="_blank">
+                        <img src="assets/1_s986xIGqhfsN8U--09_AdA.png" alt="Medium">
+                      </a>
+                      <a href="https://www.linkedin.com/in/aiden-allen-a7385421a/" target="_blank">
+                        <img src="assets/linked.webp" alt="LinkedIn">
+                      </a>
+                      
+            </p>
+        </footer>
+        </div>
+    </section>
+    </body>
+    </html>

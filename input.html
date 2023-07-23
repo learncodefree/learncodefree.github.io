@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<!--Site Declerations-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aiden Allen">
+    <meta name="keywords" content="Resume">
+    <title>Aiden Allen &vert; Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="responsive.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+<div class="container">
+    <section id="head">
+        <a href="index.html">
+            
+            <h1>
+                Learn To Code!
+            </h1>
+        </a>
+        <br>
+        <h5>
+            For Best View Please Use a PC
+        </h5>
+    </section>
+    <section id="input_user">
+        <div class="pro">
+            <h2>
+                User Input
+            </h2>
+            <p>One of the most important features within C++ is the ability to gather user input. 
+                Gathering user input could be used for example to create a game of madLibs. The collection 
+                of user input allows for interactive programs, dynamic behavior, as well as decision making within a 
+                program. Using a char input for example may allow for a selection menu for a program. 
+                <br><br>
+                To gather user input in C++, the "cin" object is used. It allows the program to read data from the user, which can then be processed, manipulated, or displayed accordingly. Properly handling user input is crucial for writing robust, user-friendly programs. However, developers should also be cautious about input validation to avoid potential security vulnerabilities like buffer overflows or injection attacks.
+                <br><br></p>
+                <div class="container_code">
+                <code>
+                    #include &lt;iostream&gt;<br>
+                    #include &lt;string&gt;<br>
+                        <br><br>
+                        int main() {<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; string name;<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; int age;<br>
+                            <br><br>
+                            // Gathering user input for name<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; cout << "Enter your name: ";<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; getline(std::cin, name);<br>
+                            <br><br>
+                            // Gathering user input for age<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; cout << "Enter your age: ";<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; cin >> age;<br>
+                            <br><br>
+                             // Displaying user input<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; cout << "Hello, " << name << "! You are " << age << " years old." << endl;<br>
+                            <br><br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; return 0;<br>
+                        }                        
+                </code>
+                <br>
+        </div>
+    </section>
+    <section id="input_user">
+        <div class="pro">
+            <h2>Example Programs</h2>
+            <a href="file_downloads/temp_plus.cpp" download>
+                <button class="button"><span>🌡️ + </span</button>
+              </a>
+                <a href="file_downloads/dog.cpp" download>
+                    <button class="button"><span>🐕 </span</button>
+                  </a>
+                  <a href="file_downloads/mad_libs.cpp" download>
+                    <button class="button"><span>📚 </span</button>
+                  </a>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+        <footer>
+            <p>
+                &copy; Aiden Allen 2023 &vert; Florida State University &vert; Department of Computer Science
+                </p>
+                <p>
+                    <a href="https://github.com/awa03" target="_blank">
+                        <img src="assets/github.png" alt="Github">
+                      </a>
+                      <a href="https://medium.com/@4376340" target="_blank">
+                        <img src="assets/1_s986xIGqhfsN8U--09_AdA.png" alt="Medium">
+                      </a>
+                      <a href="https://www.linkedin.com/in/aiden-allen-a7385421a/" target="_blank">
+                        <img src="assets/linked.webp" alt="LinkedIn">
+                      </a>
+                      
+            </p>
+        </footer>
+        </div>
+    </section>
+    </body>
+    </html>
